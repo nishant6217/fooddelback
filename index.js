@@ -16,9 +16,10 @@ const restro = require("./model/restroSchema");
 
 const meal = require("./model/mealSchema");
 // const defaultData = require("./defaultData");
-const defaultMeal = require("./defaultMeal");
+// const defaultMeal = require("./defaultMeal");
 
 app.use("/", require("./routes"));
+// defaultMeal();
 
 app.listen(PORT, function (err) {
   if (err) {
@@ -27,4 +28,4 @@ app.listen(PORT, function (err) {
   console.log("server running on port ", PORT);
 });
 // defaultData();
-defaultMeal();
+
